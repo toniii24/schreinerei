@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminformular</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="sidebar"> 
+        <h2>Navigation</h2> 
+        <ul> 
+            <li><a href="index.html">Splitter Bee's</a></li> 
+            <li><a href="dienste.html">Dienste</a></li> 
+            <li><a href="oeffnung.html">Öffnung</a></li> 
+            <li><a href="geschichte.html">Geschichte</a></li> 
+            <li><a href="ueber_uns.html">Über uns</a></li>
+            <li><a href="produkte.html" >Werke</a></li> 
+        </ul>
+    </div>
+    <div class="content"> <!-- Terminformular -->
+        <h1>Terminformular</h1> 
+        <form> 
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name" required><br> <!-- Eingabefeld -->
+
+            <label for="email">E-Mail:</label> 
+            <input type="email" id="email" name="email" required><br> 
+
+            <label for="date">Termin Datum:</label> 
+            <input type="date" id="date" name="date" required><br> 
+
+            <label for="time">Termin Zeit:</label> 
+            <input type="time" id="time" name="time" required><br> 
+
+            <input type="submit" value="Absenden"> <!-- Button -->
+        </form>
+    </div>
+    <div class="footer"> 
+        <p><a href="impressum.html">Impressum</a></p> 
+    </div>
+</body>
+</html>

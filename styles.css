@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+.sidebar {
+    width: 200px; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    overflow: auto; 
+}
+
+.sidebar h2 {
+    text-align: center; /* Navigation */
+}
+
+.sidebar ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* leistenininhalt */
+}
+
+.sidebar ul li a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+.sidebar ul li a:hover {
+    color: #ff9500; /* orange hover */
+}
+
+.sidebar ul li a.active {
+    font-weight: bold; 
+}
+
+.content {
+    margin-left: 240px; /* taskbar platz seite */
+    padding: 20px; 
+    flex: 1; 
+}
+
+.content h1 {
+    margin-top: 60px; /*  Überschriftplatz  */
+}
+
+.content p {
+    margin-top: 20px; 
+}
+
+.hero-image {
+    width: 100%; 
+    height: 300px; 
+    background-image: url(path_to_your_image.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    margin-top: 40px; 
+}
+
+.hero-text {
+    position: absolute; 
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    text-align: center; 
+    padding: 20px; 
+    border-radius: 10px; /* Abgerundete Ecken */
+}
+
+.footer, .footer1 { /* Fußzeile */
+    text-align: center; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+    position: bottom; 
+    bottom: 0; /* unterer Rand */
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.about-us, .history {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.text-left, .text-right {
+    flex: 1; 
+}
+
+.text-left {
+    padding-right: 20px; 
+}
+
+.text-right {
+    padding-left: 20px; 
+}
+
+.text-right img, .history img {
+    max-width: 100%; 
+    height: auto; 
+    margin-top: 20px; 
+}
+
+.text-right p, .history p {
+    margin-top: 10px; 
+}
+
+.table-container {
+    display: table; /*  Tabelle */
+    width: 100%; 
+}
+
+.table-container .table-cell {
+    display: table-cell; 
+    padding: 10px; 
+}
+
+.table-container .table-cell.left {
+    vertical-align: top; 
+}
+
+.table-container .table-cell.right {/*  über uns */
+    vertical-align: top; 
+    text-align: center; 
+}
+
+.schedule, .appointment-form {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+}
+
+.schedule th, .schedule td, .appointment-form th, .appointment-form td {/* Anfrage */
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+.schedule th, .appointment-form th {
+    background-color: #f4f4f4; /* tabellen frbe1 */
+}
+
+.schedule tr:nth-child(even), .appointment-form tr:nth-child(even) {
+    background-color: #f9f9f9; /* jede zweite zeie grau */
+}
+
+.header-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.header-container .text-left {
+    flex: 1; 
+}
+
+.header-container .text-right {
+    flex: 1; 
+}
+
+.underline {
+    border-bottom: 1px solid #ccc; 
+}
